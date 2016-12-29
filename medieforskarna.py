@@ -47,8 +47,9 @@ def ReadRssAndTweet(url):
 	for item in feed["items"]:
 		title = item["title"]
 		link = item["link"]
+		description = item["description"]
 		if not (IsUrlAlreadyPosted(link)): # Make sure we don't post any dubplicates.
-			message = title + " " + link
+			message = title + " " + description + link
 			PostTweet(message)
 			MarkUrlAsPosted(link)
 			print "Posted: " + link
