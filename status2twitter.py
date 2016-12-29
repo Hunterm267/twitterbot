@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 # Get RSS feed items from http://medieforskarna.se/feed/ and post tweets to account @medieforskarna.
-# Peter M. Dahlgren
-# 2015-10-31
+# Originally designed by Peter M. Dahlgren, edited by Hunter McNenny
+# Updated on 12-29-2016
 
 from twython import Twython, TwythonError
 import csv
@@ -19,8 +19,8 @@ from datetime import date
 # Settings for the application.
 class Settings:
 	FeedUrl = "https://status.recklessnetwork.com/rss"							# RSS feed to read and post tweets from.
-	PostedUrlsOutputFile = "medieforskarna-posted-urls.log"				# Log file to save all tweeted RSS links (one URL per line).
-	PostedRetweetsOutputFile = "medieforskarna-posted-retweets.log"		# Log file to save all retweeted tweets (one tweetid per line).
+	PostedUrlsOutputFile = "postedRSSTweets.log"				# Log file to save all tweeted RSS links (one URL per line).
+	PostedRetweetsOutputFile = "Reckless-posted-retweets.log"		# Log file to save all retweeted tweets (one tweetid per line).
 
 
 # Twitter authentication settings.
