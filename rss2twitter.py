@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# Get RSS feed items from http://medieforskarna.se/feed/ and post tweets to account @medieforskarna.
+# Get RSS feed items from https://status.recklessnetwork.com/rss and post tweets to account @recklessgamers.
 # Originally designed by Peter M. Dahlgren, edited by Hunter McNenny
 # Updated on 12-29-2016
 
@@ -87,10 +87,10 @@ def MarkUrlAsPosted(url):
 
 # Show available commands.
 def DisplayHelp():
-	print "Syntax: python medieforskarna-post.py [cmd]"
+	print "Syntax: python rss2twitter.py [cmd]"
 	print
 	print " Available commands:"
-	print "    rss    Read Reckless Status and post new items to @recklessgamers"
+	print "    rss    Read new Reckless Status updates and post titles and links to @recklessgamers"
 	print "    help   Show this help screen"
 	print
 
