@@ -18,7 +18,7 @@ from datetime import date
 
 # Settings for the application.
 class Settings:
-	FeedUrl = "http://medieforskarna.se/feed/"							# RSS feed to read and post tweets from.
+	FeedUrl = "https://status.recklessnetwork.com/rss"							# RSS feed to read and post tweets from.
 	PostedUrlsOutputFile = "medieforskarna-posted-urls.log"				# Log file to save all tweeted RSS links (one URL per line).
 	PostedRetweetsOutputFile = "medieforskarna-posted-retweets.log"		# Log file to save all retweeted tweets (one tweetid per line).
 
@@ -60,7 +60,7 @@ def ReadRssAndTweet(url):
 		#time.sleep(1)
 
 
-# Has the URL already been posted? 
+# Has the URL already been posted?
 def IsUrlAlreadyPosted(url):
 	if os.path.isfile(Settings.PostedUrlsOutputFile):
 		# Read log file and check whether URL is in the log file.
@@ -117,7 +117,7 @@ def SearchAndRetweet():
 		print e
 
 
-# Has the tweet already been retweeted? 
+# Has the tweet already been retweeted?
 def IsTweetAlreadyRetweeted(tweetid):
 	if os.path.isfile(Settings.PostedRetweetsOutputFile):
 		# Read log file and check whether the tweets ID is in the log file.
