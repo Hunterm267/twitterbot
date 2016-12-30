@@ -7,8 +7,9 @@ The bot is limited to handle one feed and one Twitter account.
 
 1. Download or git clone this repository.
 2. Install the dependencies:
-  - <code>pip install <a href="https://pythonhosted.org/feedparser/">feedparser</a></code>
-  - <code>pip install <a href="https://twython.readthedocs.org/en/latest/">twython</a></code>
+  - <code>$ sudo apt-get install python-pip</code>
+  - <code>$ pip install <a href="https://pythonhosted.org/feedparser/">feedparser</a></code>
+  - <code>$ pip install <a href="https://twython.readthedocs.org/en/latest/">twython</a></code>
 3. Create a <a href="https://apps.twitter.com/">Twitter application</a>, and access tokens and keys.
 4. Modifiy the settings in the source code.
    - Modify <code>FeedUrl</code> to the RSS feed you want to read.
