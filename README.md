@@ -17,9 +17,10 @@ The bot is limited to handle one feed and one Twitter account.
 
 ## How do I use Twitterbot?
 
-Read the RSS feed and post to Twitter account:
+Read the RSS feed and post to Twitter account (this runs the script manually):
 
 <code>$ python rss2twitter.py rss</code>
 
 Preferably, you should use crontab to set it up to run once every 5 minutes or so. An example of this on Ubuntu 16.04 using Crontab would be
+
 <code>*/5 * * * * /usr/bin/python /path/to/script/rss2twitter.py rss</code>.
