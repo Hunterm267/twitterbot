@@ -1,4 +1,8 @@
 # Twitterbot
+[![Passing](https://img.shields.io/travis/rust-lang/rust/master.svg)]()
+[![UpToDate](https://img.shields.io/versioneye/d/ruby/rails.svg)]()
+[![Release](https://img.shields.io/badge/release-v1.0-blue.svg)]()
+
 Twitterbot is a simple Python application for reading and parsing a RSS feed and posting its title and links to a Twitter account.
 
 The bot is limited to handle one feed and one Twitter account.
